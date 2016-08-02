@@ -18,7 +18,7 @@ $submenu = new Submenu($menu);
 
 | Parameter | Default | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `$menu` | `null` | Yes | Menu item location, same as [`TimberMenu`](https://github.com/timber/timber/wiki/TimberMenu#initialize)
+| `$menu` | `null` | Yes | Menu which should be used, same as [`TimberMenu`](https://github.com/timber/timber/wiki/TimberMenu#initialize)
 
 ## Example
 
