@@ -13,7 +13,8 @@ final class Submenu
         $this->location = $location;
     }
 
-    public function __get($name) {
+    public function __get($name)
+    {
         return $this->get()->{$name};
     }
 
@@ -31,7 +32,7 @@ final class Submenu
                 return ($item->current || $item->current_item_parent || $item->current_item_ancestor);
             });
 
-            $this->active = array_shift($activeItems);    
+            $this->active = array_shift($activeItems);
         }
 
         return $this->active;
