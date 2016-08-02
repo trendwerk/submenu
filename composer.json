@@ -1,5 +1,18 @@
 {
+  "name": "trendwerk/submenu",
+  "description": "Submenu for Timber.",
+  "license": "GPL-3.0+",
+  "authors": [
+    {
+      "name": "Harold Angenent",
+      "email": "harold@trendwerk.nl"
+    }
+  ],
   "require-dev": {
     "squizlabs/php_codesniffer": "2.*"
+  },
+  "require": {
+    "php": ">=5.4",
+    "timber/timber": "*"
   }
 }
