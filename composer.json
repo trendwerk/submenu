@@ -8,6 +8,11 @@
       "email": "harold@trendwerk.nl"
     }
   ],
+  "autoload": {
+    "psr-4": {
+      "Trendwerk\\Submenu": ""
+    }
+  },
   "require-dev": {
     "squizlabs/php_codesniffer": "2.*"
   },
