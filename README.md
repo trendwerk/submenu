@@ -35,9 +35,9 @@ Use `submenu` as you would use a `Timber\MenuItem`.
   <h3>{{ submenu.title }}</h3>
 
   <ul>
-	  {% for item in submenu.children %}
-	  	<li>{{ item.title }}</li>
-	  {% endfor %}
+    {% for item in submenu.children %}
+      <li>{{ item.title }}</li>
+    {% endfor %}
   </ul>
 {% endif %}
 ```
