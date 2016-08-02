@@ -6,11 +6,11 @@ use Timber\Menu;
 final class Submenu
 {
     private $current;
-    private $location;
+    private $menu;
 
-    public function __construct($location)
+    public function __construct($menu)
     {
-        $this->location = $location;
+        $this->menu = $menu;
     }
 
     public function __get($name)
@@ -26,7 +26,7 @@ final class Submenu
     private function get()
     {
         if (! $this->current) {
-            $menu = new Menu($this->location);
+            $menu = new Menu($this->menu);
 
             $currentItems = array_filter($menu->items, [$this, 'isCurrent']);
             $this->current = array_shift($currentItems);
