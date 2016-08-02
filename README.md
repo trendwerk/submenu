@@ -1,2 +1,2 @@
-# submenu
-Submenu for WordPress. Shipped with Timber Helper.
+# Submenu
+Submenu for [Timber](https://github.com/timber/timber).
