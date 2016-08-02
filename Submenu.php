@@ -5,7 +5,7 @@ use Timber\Menu;
 
 final class Submenu
 {
-    private $active;
+    private $current;
     private $location;
 
     public function __construct($location)
@@ -25,14 +25,14 @@ final class Submenu
 
     private function get()
     {
-        if (! $this->active) {
+        if (! $this->current) {
             $menu = new Menu($this->location);
 
-            $activeItems = array_filter($menu->items, [$this, 'isCurrent']);
-            $this->active = array_shift($activeItems);
+            $currentItems = array_filter($menu->items, [$this, 'isCurrent']);
+            $this->current = array_shift($currentItems);
         }
 
-        return $this->active;
+        return $this->current;
     }
 
     private function isCurrent($item)
