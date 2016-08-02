@@ -10,7 +10,17 @@ composer require trendwerk/submenu
 1. Add a new instance of Submenu to Timber's context
 2. Use it like you would use a `Timber\MenuItem`
 
-### Example
+## Parameters
+
+```php
+new Submenu($menu)
+````
+
+| Parameter | Default | Required | Description |
+| :--- | :--- | :--- | :--- |
+| `$menu` | `null` | Yes | Menu item location, same as [`TimberMenu`](https://github.com/timber/timber/wiki/TimberMenu#initialize)
+
+## Example
 
 Add a new instance of Submenu to your context:
 ```php
