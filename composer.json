@@ -10,7 +10,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Trendwerk\\Submenu": "src/"
+      "Trendwerk\\Submenu\\": "src/"
     }
   },
   "require-dev": {
