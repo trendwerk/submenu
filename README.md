@@ -13,7 +13,7 @@ composer require trendwerk/submenu
 ## Parameters
 
 ```php
-new Submenu($menu)
+$submenu = new Submenu($menu);
 ````
 
 | Parameter | Default | Required | Description |
