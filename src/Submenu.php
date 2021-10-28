@@ -21,6 +21,10 @@ final class Submenu
 
     public function __isset(string $name)
     {
+        if ($this->get() == null) {
+            return false;
+        }
+        
         return (isset($this->get()->{$name}) || method_exists($this->get(), $name));
     }
 
